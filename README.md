@@ -15,8 +15,8 @@ How to build:
 Initialize repo:
 
 repo init -u git://github.com/SlimRoms/platform_manifest.git -b kk4.4-caf
-curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/sooorajjj/android_device_lge_e400/blob/master/manifest_lge_e400.xml
-curl -L -o .repo/local_manifests/manifest_lge_e400.xml -O -L https://raw.github.com/sooorajjj/android_device_lge_e400/blob/master/manifest_lge_e400.xml
+curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/sooorajjj/android_device_lge_e400/blob/TWRP/manifest_lge_e400.xml
+curl -L -o .repo/local_manifests/manifest_lge_e400.xml -O -L https://raw.github.com/sooorajjj/android_device_lge_e400/blob/TWRP/manifest_lge_e400.xml
 repo sync
 Compile:
 
