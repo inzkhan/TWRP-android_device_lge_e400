@@ -20,6 +20,7 @@ curl -L -o .repo/local_manifests/manifest_lge_e400.xml -O -L https://raw.github.
 repo sync
 Compile:
 
+
  source build/envsetup.sh
  breakfast e400
  brunch e400
