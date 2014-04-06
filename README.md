@@ -22,5 +22,7 @@ Compile:
 
 
  source build/envsetup.sh
+ 
  breakfast e400
+ 
  brunch e400
