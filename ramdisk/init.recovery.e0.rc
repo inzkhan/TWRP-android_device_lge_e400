@@ -196,6 +196,11 @@ on boot
     chown system /sys/devices/platform/rs300100a7.65536/force_sync
     chown system /sys/devices/platform/rs300100a7.65536/sync_sts
     chown system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
+    
+# FIX UMS 
+ 	chown root shell /tmp
+    chmod 0775 /tmp
+
 
 # Fix FFC
     write /proc/sys/kernel/randomize_va_space 1
@@ -273,3 +278,11 @@ service charger /charger
 
 on property:init.svc.charger=running
     exec /system/bin/chgchk
+    
+#Enable ADB in recovery
+
+on property:persist.service.adb.enable=1
+    start adbd
+
+on property:persist.service.adb.enable=0
+    stop adbd
