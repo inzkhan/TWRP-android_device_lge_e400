@@ -72,7 +72,7 @@ BOARD_EGL_CFG := device/lge/e400/egl.cfg
 BOARD_HAVE_BLUETOOTH := true
 
 ## Mass Storage
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 BOARD_UMS_LUNFILE := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
 ## Browser & WebKit
